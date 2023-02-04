@@ -1,0 +1,155 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#encabezado {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    box-shadow: 0px 14px 18px 1px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 0px 14px 18px 1px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 0px 14px 18px 1px rgba(0, 0, 0, 0.88);
+}
+
+.encabezadoImg {
+
+    width: 200px;
+    height: 100px;
+    margin: 10px 0px 10px 0px;
+}
+
+
+
+#contenido {
+    background-image: url(/assets/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedorDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedorImg {
+    margin: 30px 40px 30px 30px;
+    position: relative;
+}
+
+img {
+
+    width: 250px;
+    height: 250px;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+
+}
+
+.contenedorImg:hover>img {
+    transform: scale(1.2);
+}
+
+.contenedorImg .imgCapa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.438);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedorImg:hover>.imgCapa {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.2);
+}
+
+
+
+.contenedorImg:hover>.imgCapa .imgBtn {
+    margin-top: 40%;
+}
+
+.imgBtn {
+    border: 0;
+    transition: all 500ms ease;
+    background: none;
+    color: #ffff;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.conteiner-all {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+    z-index: 1;
+    margin: 0;
+    top: 0%;
+}
+
+.conteiner-all:target {
+    background: #000000;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://i.stack.imgur.com/EpcKN.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+iframe {
+    border-radius: 10px 10px 10px 10px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.imgPopup {
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px 10px;
+}
+
+.btnClosePopup {
+    margin-top: 15px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+
+}
