@@ -24,7 +24,7 @@
 
 
 #contenido {
-    background-image: url(/assets/fondo.jpg);
+    background-image: url(./assets/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
